@@ -20,6 +20,6 @@ app.use("/api/tasks", require("./routes/tasks"))
 
 
 //escuchar peticiones
-app.listen(process.env.PORT, ()=>{
+app.listen(process.env.PORT, "0.0.0.0", ()=>{
     console.log(`servidor corriendo en puerto ${process.env.PORT}`)
 })
